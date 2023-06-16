@@ -1,0 +1,175 @@
+.Titulo {
+  display: flex;
+  margin: 50px auto;
+  margin-top: 80px;
+  text-align: center;
+  flex-direction: column; 
+}
+
+h2 {    
+  color: #FF3A2C;
+  font-size: 50px;
+}
+
+.Categorias {
+  text-align: center;
+  margin: 1rem auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.Categorias button {
+  background-color: #DA9C89;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 32px;
+  border-width: 0px;
+  width: 240px;
+  height: 180px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin: 15px;
+}
+
+/*.Caseiro {
+  background-image: url("/Projeto Extensionista/src/Ícones/Bolo\ Caseiro.jpg");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Festa {
+  background-image: url("/Projeto Extensionista/src/Ícones/Bolo\ de\ Festa.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Pães {
+  background-image: url("/Projeto Extensionista/src/Ícones/Pães.jpg");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Quitanda {
+  background-image: url("/Projeto Extensionista/src/Ícones/Quitandas.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Sazonais {
+  background-image: url("/Projeto Extensionista/src/Ícones/Sazonal.jpg");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+.Categorias button:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.Categorias a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}
+
+
+
+.MaisVendidos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.Mais-Vendidos {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.MaisVendidos img{
+  padding: 0;
+  border: 5px solid #491B19;
+  border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  background-color: #F8DAD0;
+}
+
+.MaisVendidos h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  color: white;
+  background-color: #491B19;
+  width: 135px;
+  height: 40px;
+  border-radius: 32px;
+  text-decoration: none;
+}
+
+.col{
+  max-width:100% ;
+  text-align: center;
+  padding-left: 10px;
+  justify-content: center;
+  background-color: white;
+ 
+}
+
+
+@media screen and (max-width:600px) {
+  .splide__list{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .splide__slide img {
+      display: flex;
+      position: relative;
+      left: 10px;
+      width: 150px;
+  }
+
+  .splide__slide {
+      width: auto;
+  }
+
+  .splide ul li {
+      background-color: #F8DAD0;
+      margin: 0;
+      padding: 0;
+  }
+
+  .splide__pagination, .splide__pagination li, .splide__arrow {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .Vendidos {
+      display: flex;
+  }
+
+  .Vendidos span:before, .Vendidos span:after {
+      width: 0    ;
+  }
+
+  .MaisVendidos, .Vendidos, h3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}

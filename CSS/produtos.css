@@ -1,0 +1,195 @@
+.Titulo {
+    display: flex;
+    margin: 30px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    text-align: center;
+    flex-direction: column; 
+  }
+
+.Titulo h2 {
+    color: #FF3A2C;
+    font-size: 50px;
+    cursor: default;
+}
+
+.splide ul li {
+    background: #F8DAD0;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.splide ul li::before {
+    visibility: hidden;
+}
+
+.splide__slide img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.splide__pagination, .splide__pagination li, .splide__arrow  {
+    background-color: transparent !important;
+}
+
+.splide__arrow svg {
+    background: transparent;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.btm {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+
+.btm-orca a {
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btm-orca {
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: 0px solid white;
+    border-radius: 40px;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+.btm-orca:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.btm-orca label {
+    font-size: 22px;
+    background: transparent;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btm-orca img {
+    background: transparent;
+    width: 32px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width:600px) {
+    .splide {
+        padding: 0;
+    }
+
+    .splide__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .splide__slide img {
+        display: flex;
+        position: relative;
+        left: 0px;
+        width: 150px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .splide ul li {
+        background-color: #F8DAD0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .splide__pagination, .splide__pagination li, .splide__arrow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btm-orca {
+        width: 70%;
+    }
+
+    .btm-orca label {
+        font-size: 18px ;
+    }
+
+    .btm-orca img {
+        width: 32px;
+    }
+
+    .Produtos {
+        align-items: center;
+    }
+
+    .Prod {
+        flex-direction: column;
+        width: 250px !important;
+        height: 300px !important;
+    }
+
+    .Descrição {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.Produtos img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.Produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    background-color: #F8DAD0;
+}
+
+.Prod {
+    background-color: #F8DAD0;  
+    border: 3px solid #491B19;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    width: 390px;
+    height: 200px;
+}
+
+.Produtos label {
+    font-size: 14px;
+}
+
+.Descrição {
+    color: black;
+    padding: 10px 20px 10px 20px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Descrição h2 {
+    display: flex;
+    font-size: 20px;
+    color: #491B19;
+}
+
+.Descrição p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #FF3A2C;
+}

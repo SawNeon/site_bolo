@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+  font-family: League Spartan;
+  background-color: #F8DAD0;
+  margin: 0;
+  padding: 0;
+}
+
+main img {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  margin-top: 5px;
+}
+
+h1, ul {
+  display: flex;
+  background: #491B19;
+  margin-top: 15px;
+}
+
+ul li, h1 p {
+  font-size: 20px;
+  display: flex;
+  margin: 1rem auto;
+  font-weight: bold;
+  border-width: 0px;
+  background: #491B19;
+  color: white;
+  align-items: center;
+  border: none;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+ul li:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+li a{
+  color: white;
+  background: #491b19;
+  text-decoration: none;
+}
+
+#toggler,
+main label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    background: #491B19;
+    margin-top: 0px;
+  }
+  
+  ul li {
+    font-size: 20px;
+    display: flex;
+    margin: 1rem auto;
+    font-weight: bold;
+    border-width: 0px;
+    background: #491B19;
+    color: white;
+    align-items: center;
+    border: none;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  ul li:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  ul li:hover {
+    cursor: pointer;
+  }
+  
+  ul a{
+    color: white;
+    background: #491b19;
+    text-decoration: none;
+  }
+
+  .Info {
+    display: flex;
+    justify-content: center;
+  }
+
+  main label img {
+    background-color: #491B19;
+    display: flex;
+    padding: 5px 15px;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+  }
+
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  main label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #491B19;
+    justify-content: flex-end;
+  }
+
+  .checkbox {
+    margin: 20px 0px;
+    background-color: #491B19;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+    overflow: visible;
+  }
+}
+
+.Footer{
+  background-color: #491B19;
+  margin-top: 5rem;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  color: white;
+  padding-top: 30px;
+}
+  
+.Social, .Midia, .Facebook, .Instagram, .Whatsapp {
+  align-content: center;
+  background-color: #491B19;
+  text-align: center;
+  display: contents;
+}
+
+.Midia {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h4 {
+  background-color: #491B19;
+}
+
+.Social h4{
+  display: flex;
+  justify-content: center;
+  background-color: #491B19;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+  
+.Midia a {
+  text-decoration: none;
+  background-color: #491B19;
+  position: relative;
+}
+  
+.Midia img {
+  width: 30px;
+  background-color: #491B19;
+  margin: 5px;
+  align-content: center;
+}
+
+.Facebook ::before, .Whatsapp ::after {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background: white;
+  margin-right: 10px;
+}
+
+.Whatsapp ::after {
+  left: 50px;
+  margin-left: 10px;
+}
+
+.Info {
+  background-color: #491B19;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.Info *{
+  background-color: #491B19;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.Info img {
+  margin-right: 3px;
+  height: 16px;
+  color: white;
+}
+
+.Info label {
+  color: #DA9C89;
+  font-size: 14px;
+}

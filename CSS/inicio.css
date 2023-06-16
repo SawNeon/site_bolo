@@ -1,0 +1,185 @@
+h2 {
+    display: flex;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+h2 span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #DA9C89;
+    border-radius: 32px;
+    width: 620px;
+    height: 35px;
+}
+
+.splide ul li {
+    background: #F8DAD0;
+    margin: 50px 0 0 0;
+    padding: 0;
+    cursor: auto;
+}
+
+.splide ul li::before {
+    visibility: hidden;
+}
+
+.splide__slide img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.splide__pagination, .splide__pagination li, .splide__arrow  {
+    background-color: transparent !important;
+}
+
+.splide__arrow svg {
+    background: transparent;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.Vendidos {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.Vendidos span p {
+    background-color: #491B19;
+    color: white;
+    font-size: 22px;
+    border-radius: 15px;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Vendidos span {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.Vendidos span:before, .Vendidos span:after {
+    margin: 0;
+    padding: 0;
+    content: '';
+    height: 2.3px;
+    width: 550px;
+    bottom: 50%;
+    right: 70px;
+    background: #DA9C89;
+    margin-right: 15px;
+}
+
+.Vendidos span::after {
+    left: 70px;
+    margin-left: 15px;
+}
+
+.MaisVendidos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.Mais-Vendidos {
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.MaisVendidos img{
+    padding: 0;
+    border: 5px solid #491B19;
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: #F8DAD0;
+}
+
+.MaisVendidos h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    color: white;
+    background-color: #491B19;
+    width: 135px;
+    height: 40px;
+    border-radius: 32px;
+    text-decoration: none;
+}
+
+.col{
+    max-width:100% ;
+    text-align: center;
+    padding-left: 10px;
+    justify-content: center;
+    background-color: white;
+   
+}
+
+h7{
+    font-size: 40px;
+    background-color: white;
+
+
+}
+
+@media screen and (max-width:600px) {
+    .splide__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .splide__slide img {
+        display: flex;
+        position: relative;
+        left: 10px;
+        width: 150px;
+    }
+
+    .splide__slide {
+        width: auto;
+    }
+
+    .splide ul li {
+        background-color: #F8DAD0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .splide__pagination, .splide__pagination li, .splide__arrow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Vendidos {
+        display: flex;
+    }
+
+    .Vendidos span:before, .Vendidos span:after {
+        width: 0    ;
+    }
+
+    .MaisVendidos, .Vendidos, h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

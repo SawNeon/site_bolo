@@ -1,0 +1,38 @@
+.em-breve {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.em-breve p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #DA9C89;
+    font-size: 32px;
+    border: 5px solid #DA9C89;
+    border-radius: 16px;
+    width: 450px;
+    height: 150px;
+}
+
+.curso-em-breve {
+    margin: 73px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.curso-em-breve p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #DA9C89;
+    font-size: 32px;
+    border: 5px solid #DA9C89;
+    border-radius: 16px;
+    width: 450px;
+    height: 150px;
+}
