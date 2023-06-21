@@ -261,3 +261,19 @@ h4 {
   color: #DA9C89;
   font-size: 14px;
 }
+
+button{
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  border-color: green;
+  
+}
+
+.Botão{
+  text-align: center;
+  size: 100px;
+  
+}
